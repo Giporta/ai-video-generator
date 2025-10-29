@@ -1,0 +1,8 @@
+gradio==3.50.2
+openai
+anthropic
+requests
+Pillow
+groq
+PyJWT
+edge-tts
