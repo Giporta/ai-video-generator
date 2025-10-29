@@ -135,10 +135,7 @@ print("📝 GENERAZIONE SCRIPT (DeepSeek V3)")
 print("=" * 60)
 
 # DeepSeek client
-client = OpenAI(
-    api_key=DEEPSEEK_KEY,
-    base_url="https://api.deepseek.com/v1"
-)
+client = OpenAI(api_key=DEEPSEEK_KEY, base_url="https://api.deepseek.com")
 
 # OUTLINE PROMPT (Competitor-analyzed)
 outline_prompt = f"""Create a detailed plot outline for a {NUM_IMAGES}-chapter story based on this title: "{STORY_TITLE}"
