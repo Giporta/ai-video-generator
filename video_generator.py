@@ -22,7 +22,6 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "openai"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "requests"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "groq"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "Pillow"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "gradio-client"])
 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "anthropic"])
 
 print("✅ Installazione completata!\n")
@@ -42,7 +41,6 @@ import numpy as np
 import gc
 from PIL import Image
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from gradio_client import Client
 
 print("✅ Import completati!\n")
 
