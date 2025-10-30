@@ -104,8 +104,9 @@ with open("video_generator.py") as f:
                 log_generation(username, title, "TIMEOUT")
                 st.error("❌ Timeout (>30 min)")
             except Exception as e:
+                import traceback
                 log_generation(username, title, "ERROR")
-                st.error(f"❌ Error: {str(e)}")
+                st.error(f"❌ Error: {str(e)}\n\nDetails:\n{traceback.format_exc()}")
 
 with st.expander("📊 Statistics (Admin)"):
     if st.button("Refresh Stats"):
