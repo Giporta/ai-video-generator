@@ -124,8 +124,8 @@ print("=" * 60)
 
 # DeepSeek client with explicit httpx client to bypass proxy issues
 http_client = httpx.Client(
-    timeout=60.0,
-    transport=httpx.HTTPTransport(retries=3)
+    timeout=600.0,
+    transport=httpx.HTTPTransport(retries=10)
 )
 
 client = OpenAI(
