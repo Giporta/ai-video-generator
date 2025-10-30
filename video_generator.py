@@ -13,20 +13,8 @@
 # 
 # 🔮 FUTURE: RunPod Serverless per animazioni (primi 20-30 sec)
 # ═══════════════════════════════════════════════════════════════
-
-print("🔧 Installazione librerie...")
 import subprocess
 import sys
-
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "openai"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "requests"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "groq"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "Pillow"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "httpx"])
-subprocess.check_call([sys.executable, "-m", "pip", "install", "-q", "anthropic"])
-
-print("✅ Installazione completata!\n")
-
 import os
 import json
 import requests
